@@ -129,14 +129,6 @@ def get_declensions_az(word):
         if last_vowel in ['o', 'u' ]:
             declensions = ['u', 'un', 'a', 'da', 'dan']
     
-    # return {
-    #     "Nom."  : word, 
-    #     "Acc"   : root_ + declensions[0], 
-    #     "Gen"   : root_ + declensions[1], 
-    #     "Dat"   : root_ + declensions[2], 
-    #     "Loc"   : word  + declensions[3], 
-    #     "Abl:"  : word  + declensions[4]
-    # }
     return [
         word, 
         root_ + declensions[0], 
